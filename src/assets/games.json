@@ -1,0 +1,110 @@
+[
+  {
+    "id": 0,
+    "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/268910/header.jpg?t=1657135475",
+    "title": "Cuphead",
+    "genre": ["Arcade"],
+    "price": 803,
+    "category": 1,
+    "rating": 3
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/1293830/header.jpg?t=1622068013",
+    "title": "Forza Horizon 4",
+    "genre": ["Arcade"],
+    "price": 245,
+    "category": 1,
+    "rating": 5
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header_russian.jpg?t=1646996408",
+    "title": "The Witcher 3: Wild Hunt",
+    "genre": ["RPG"],
+    "price": 245,
+    "category": 2,
+    "rating": 6
+  },
+  {
+    "id": 0,
+    "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/582160/header.jpg?t=1603213581",
+    "title": "Assassin's Creed® Origins",
+    "genre": ["RPG"],
+    "price": 803,
+    "category": 2,
+    "rating": 3
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/1144200/header.jpg?t=1656646890",
+    "title": "Ready or Not",
+    "genre": ["Action"],
+    "price": 245,
+    "category": 3,
+    "rating": 2
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg?t=1618856444",
+    "title": "Grand Theft Auto V",
+    "genre": ["Action"],
+    "price": 245,
+    "category": 3,
+    "rating": 6
+  },
+  {
+    "id": 0,
+    "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/289070/header.jpg?t=1656624374",
+    "title": "Sid Meier’s Civilization® VI",
+    "genre": ["Strategy"],
+    "price": 803,
+    "category": 4,
+    "rating": 4
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/255710/header.jpg?t=1654076112",
+    "title": "Cities: Skylines",
+    "genre": ["Strategy"],
+    "price": 245,
+    "category": 4,
+    "rating": 6
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/1030840/header.jpg?t=1632420251",
+    "title": "Mafia: Definitive Edition",
+    "genre": ["Action"],
+    "price": 245,
+    "category": 3,
+    "rating": 6
+  },
+  {
+    "id": 0,
+    "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/812140/header.jpg?t=1646425720",
+    "title": "Assassin's Creed® Odyssey",
+    "genre": ["RPG"],
+    "price": 803,
+    "category": 2,
+    "rating": 4
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/534380/header.jpg?t=1656419331",
+    "title": "Dying Light 2 Stay Human",
+    "genre": ["Action"],
+    "price": 245,
+    "category": 3,
+    "rating": 6
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg?t=1656615305",
+    "title": "Red Dead Redemption 2",
+    "genre": ["Action"],
+    "price": 245,
+    "category": 3,
+    "rating": 6
+  }
+]
