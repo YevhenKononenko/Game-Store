@@ -1,6 +1,21 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { addItem } from '../redux/slices/cartSlice'
 
-const GameBlock = ({ title, price, imageUrl, genre, types }) => {
+const GameBlock = ({id, title, price, imageUrl, genre, types }) => {
+  const dispatch = useDispatch();
+  const cartItem = useSelector(state => state.cart.items.find((obj) => obj.id === id))
+  const addedCount = cartItem ? cartItem.count : 0;
+  const onClickAdd = () => {
+    const item = {
+      id,
+      title,
+      price,
+      imageUrl
+    };
+    dispatch(addItem(item))
+  }
+
   return (
     <div className="game-block-wrapper">
       <div className="game-block-main">
@@ -12,17 +27,15 @@ const GameBlock = ({ title, price, imageUrl, genre, types }) => {
         </div>
         <div className="game-block-genres">
           <ul>
-            {
-                genre.map((value) => (
-                    <li>{value}</li>
-                ))
-            }
+            {genre.map((value) => (
+              <li>{value}</li>
+            ))}
           </ul>
         </div>
         <div className="game-block-button">
-          <div className="game-buy-button">
+          <div className="game-buy-button" onClick={onClickAdd}>
             <h2>Buy</h2>
-            <h3>0</h3>
+            {addedCount > 0 && <h3>{addedCount}</h3>}
           </div>
           <div className="game-price">
             <h2>{price} $</h2>
