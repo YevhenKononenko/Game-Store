@@ -4,6 +4,7 @@ import Title from '../components/Title';
 import GameBlock from '../components/GameBlock';
 import Category from '../components/Category';
 
+
 const Home = () => {
   const [items, setItems] = React.useState([]);
 
@@ -50,6 +51,9 @@ const Home = () => {
           sortValue={sortType}
           onChangeSort={(i) => setSortType(i)}
         />
+{/*         <Link to="/gamepage" className='game-part'>
+
+        </Link> */}
         <div className="game-part">{games}</div>
       </main>
     </>

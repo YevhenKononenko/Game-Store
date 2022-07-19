@@ -1,21 +1,20 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addItem } from '../redux/slices/cartSlice'
+import { addItem } from '../redux/slices/cartSlice';
 
-const GameBlock = ({id, title, price, imageUrl, genre, types }) => {
+const GameBlock = ({ id, title, price, imageUrl, genre, rating }) => {
   const dispatch = useDispatch();
-  const cartItem = useSelector(state => state.cart.items.find((obj) => obj.id === id))
+  const cartItem = useSelector((state) => state.cart.items.find((obj) => obj.id === id));
   const addedCount = cartItem ? cartItem.count : 0;
   const onClickAdd = () => {
     const item = {
       id,
       title,
       price,
-      imageUrl
+      imageUrl,
     };
-    dispatch(addItem(item))
-  }
-
+    dispatch(addItem(item));
+  };
   return (
     <div className="game-block-wrapper">
       <div className="game-block-main">
@@ -30,8 +29,18 @@ const GameBlock = ({id, title, price, imageUrl, genre, types }) => {
             {genre.map((value) => (
               <li>{value}</li>
             ))}
+            {rating.map((value) => (
+              <li className='rate'>Rate: {value}</li>
+            ))}
           </ul>
         </div>
+{/*         <div className="game-block-rating">
+          <ul>
+            {rating.map((value) => (
+              <li>{value}</li>
+            ))}
+          </ul>
+        </div> */}
         <div className="game-block-button">
           <div className="game-buy-button" onClick={onClickAdd}>
             <h2>Buy</h2>

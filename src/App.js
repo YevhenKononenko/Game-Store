@@ -6,6 +6,7 @@ import Cart from './pages/Cart'
 import Account from './pages/Account';
 import Paid from './pages/Paid';
 import Send from './pages/Send'
+import GamePage from './pages/GamePage';
 import './scss/main.scss';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/account' element={<Account />} />
           <Route path='/paid' element={<Paid />} />
           <Route path='/send' element={<Send />} />
+          <Route path='/gamepage' element={<GamePage />} />
         </Routes>
       </div>
     </div>

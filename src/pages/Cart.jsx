@@ -17,11 +17,7 @@ const Cart = () => {
       dispatch(clearItems());
     }
   };
-  const onClickClearBuy = () => {
-    if (window.confirm('Are you want to buy?')) {
-      dispatch(clearItems());
-    }
-  };
+  
   if (!totalPrice) {
     return <CartEmpty />;
   }
@@ -72,7 +68,7 @@ const Cart = () => {
             </div>
           </Link>
           <Link to='/send' className='paid_type'>
-          <div onClick={onClickClearBuy} className="button_pay-btn">
+          <div className="button_pay-btn">
             <span>Pay now</span>
           </div>
           </Link>
